@@ -14,7 +14,7 @@ print("Message1\n\n\nmessage2")
 
 print("Your learning path:\n\t- Python Basics\n\t- Data Engineering\n\t- AI")
 
-
+# Variables
 x = 1
 print(x)
 x = 2
@@ -40,3 +40,39 @@ email = "datawithbaraa.com"
 print(f"info@{email}")
 print(f"support@{email}")
 print(f"www.{email}")
+
+
+# INPUTS
+# name = input("Enter your name:")
+country = "Kenya"
+print(f"You are {name} and you come from {country}\n\n")
+
+# FUNCTIONS ... User defined, Standard LIbrary, 3rd party libraries
+
+# Standalone functions ... print()
+# Methods of class ... upper()
+# operations .... +, /, <
+
+# module .. repeatable code.
+text = "hi"
+number = 10
+
+print(text)
+print(type(text))
+print(type(number))
+print(len(text))
+
+print(text.upper())
+print(number.bit_length())
+
+age = 26
+height = 168.0
+name = "John"
+is_student = True
+valueless = None
+
+print(type(age))
+print(type(height))
+print(type(name))
+print(type(is_student))
+print(type(valueless))
