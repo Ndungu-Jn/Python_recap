@@ -67,3 +67,32 @@ is_guest = False
 is_banned = True
 
 print((is_logged_in or is_guest) and not is_banned)
+
+
+# conditional statements
+score = 70
+submitted_project = False
+if score >= 90 and submitted_project:
+    print("Excelent")
+elif score >= 90:
+    print("Good Job")
+elif score >= 80:
+    print("You tried")
+elif score >= 70 or submitted_project:
+    print("mmmmmhhh")
+else:
+    print("You really failed")
+
+
+score = 80
+if score >= 90:
+    print("A")
+elif score >= 80:
+    print("B")
+else:
+    print("F")
+
+# Inline if
+print("A" if score >= 90 else "F")
+grade = "A" if score >= 90 else "B" if score >= 80 else "F"
+print(grade)
