@@ -96,3 +96,54 @@ else:
 print("A" if score >= 90 else "F")
 grade = "A" if score >= 90 else "B" if score >= 80 else "F"
 print(grade)
+
+country = "Kenya"
+if country == "United States":
+    print("US")
+elif country == "India":
+    print("IN")
+
+# use CASE instead
+
+match country:
+    case "United States" | "USA":
+        print("US")
+    case "Kenya":
+        print("KE")
+    case "Uganda":
+        print("UG")
+    case _:
+        print("Uknown Country")
+
+# task
+# Email must not be empty
+# Email must conatin a '.' and '@'
+# Email must contain excatly one @
+# Email must end with '.com', '.org', or '.net'
+# Email must not be longer then 254 characters
+# Email must start and end with a letter or digit
+
+email = "ndungu@gmail.net"
+# Clean the String
+email = email.strip()
+# Email must not be empty
+if email == "":
+    print("Email cannot be empty")
+# Email must conatin a '.' and '@'
+elif not ("." in email and "@" in email):
+    print("Email must contain . and @")
+# Email must contain excatly one @
+elif email.count("@") != 1:
+    print("Email must containone @")
+# Email must end with '.com', '.org', or '.net'
+elif not email.endswith((".com", ".org", ".net")):
+    print("Email must end with '.com', '.org', or '.net'")
+# Email must not be longer then 254 characters
+elif len(email) > 254:
+    print("The email is longer than 254 characters")
+# Email must start and end with a letter or digit
+elif not email[0].isalnum() and email[-1].isalnum():
+    print("Email must start and end with a letter or digit")
+
+else:
+    print("Email is valid")
