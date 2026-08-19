@@ -1,7 +1,7 @@
 # Repeat a block of code over and over until a condition is met
 # for loops and the While loops
 # for loop -- go through a group of items one by one to do something for each item
-"""
+
 print("*" * 10)
 print("Round: 1")
 print("Round: 2")
@@ -158,7 +158,7 @@ answer = ""
 while answer != "yes":
     answer = input("Do you agree? (yes/no):").lower()
 print("Thank you")
-"""
+
 
 # TEST
 attempts = 0
