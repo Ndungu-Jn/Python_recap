@@ -66,6 +66,7 @@ print(text.upper())
 print(number.bit_length())
 
 age = 26
+age = 29
 height = 168.0
 name = "John"
 is_student = True
