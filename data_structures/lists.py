@@ -35,3 +35,43 @@ print(matrix)
 print(matrix[2])
 # getting the last number in the last row
 print(matrix[-1][2])
+
+
+#unpacking
+person = ['Maria', 29, 'Data engineer','Kenya']
+
+name, age, role, country = person
+print(role)
+print(name)
+
+#order of values ids very important
+person = ['Maria', 29, 'Data engineer','Kenya']
+
+name, *details, country = person
+print(name)
+print(details)
+
+#skipping items -- use the special character _
+person = ['Maria', 29, 'Data engineer','Kenya']
+
+name, _, role, _ = person
+print(name)
+print(role)
+print("\n")
+print("*" *20)
+
+#explore and analyzing data.
+#max() -- find extreme high
+#min() -- find extreme low
+#sum() -- Find total
+#len() -- find length
+#.count() -- How often -- returns how many times a value appears in the list
+#.index -- where it appears
+
+numbers = [1,5,2,4,3,5]
+print("max:", max(numbers))
+print("min:", min(numbers))
+print("sum:", sum(numbers))
+print("Length:", len(numbers))
+print("Count:", numbers.count(5))
+print("Index:", numbers.index(5))  # only the first appearance.
