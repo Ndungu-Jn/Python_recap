@@ -77,3 +77,16 @@ print(type(height))
 print(type(name))
 print(type(is_student))
 print(type(valueless))
+
+
+#adding on the list -- goes at the end
+letters = ["a", "b", "c"]
+print(letters)
+letters.append('x')
+print(letters)
+
+# adding maybe in between or anywhere you want
+letters = ["a", "b", "c"]
+letters.insert(0,'x')
+print(letters)
+
